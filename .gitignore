@@ -1,0 +1,174 @@
+# -----------------------------
+
+# Python
+
+# -----------------------------
+
+__pycache__/
+
+*.py[cod]
+
+*.pyo
+
+*.pyd
+
+*.so
+
+# Virtual environments
+
+.env
+
+.venv
+
+env/
+
+venv/
+
+ENV/
+
+pip-wheel-metadata/
+
+# Byte-compiled / optimized / DLL files
+
+*.dll
+
+*.dylib
+
+*.log
+
+# Unit test / coverage reports
+
+.coverage
+
+.cache/
+
+nosetests.xml
+
+coverage.xml
+
+htmlcov/
+
+.tox/
+
+.pytest_cache/
+
+# -----------------------------
+
+# Data and model files
+
+# -----------------------------
+
+# Avoid committing large data or model files
+
+data/
+
+*.csv
+
+*.tsv
+
+*.jsonl
+
+*.json
+
+*.xlsx
+
+*.pkl
+
+*.joblib
+
+*.bin
+
+*.pt
+
+*.ckpt
+
+# -----------------------------
+
+# Jupyter Notebooks
+
+# -----------------------------
+
+.ipynb_checkpoints
+
+*.nbconvert.ipynb
+
+# -----------------------------
+
+# Logs and temporary files
+
+# -----------------------------
+
+*.log
+
+*.tmp
+
+*.bak
+
+*.swp
+
+*.swo
+
+*.DS_Store
+
+Thumbs.db
+
+# -----------------------------
+
+# Reports and outputs
+
+# -----------------------------
+
+*.pdf
+
+*.docx
+
+*.zip
+
+*.tar
+
+*.gz
+
+report/output/
+
+outputs/
+
+results/
+
+plots/
+
+figures/
+
+# -----------------------------
+
+# IDE and editor settings
+
+# -----------------------------
+
+.vscode/
+
+.idea/
+
+*.sublime-project
+
+*.sublime-workspace
+
+# -----------------------------
+
+# Mac and system files
+
+# -----------------------------
+
+.DS_Store
+
+.AppleDouble
+
+.LSOverride
+
+# -----------------------------
+
+# Notebooks checkpoints / caches
+
+# -----------------------------
+
+notebooks/.ipynb_checkpoints/
+
