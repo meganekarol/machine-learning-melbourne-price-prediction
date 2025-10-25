@@ -54,28 +54,6 @@ htmlcov/
 
 # -----------------------------
 
-# Data and model files
-
-# -----------------------------
-
-# Avoid committing large data or model files
-data/
-
-*.tsv
-
-*.jsonl
-
-*.json
-
-*.xlsx
-
-*.joblib
-
-*.bin
-
-*.pt
-
-*.ckpt
 
 # -----------------------------
 
