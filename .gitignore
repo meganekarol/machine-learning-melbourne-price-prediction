@@ -59,10 +59,7 @@ htmlcov/
 # -----------------------------
 
 # Avoid committing large data or model files
-
 data/
-
-*.csv
 
 *.tsv
 
@@ -71,8 +68,6 @@ data/
 *.json
 
 *.xlsx
-
-*.pkl
 
 *.joblib
 
@@ -151,6 +146,10 @@ figures/
 *.sublime-project
 
 *.sublime-workspace
+
+*.iml
+
+*.xml
 
 # -----------------------------
 
