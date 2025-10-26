@@ -1,0 +1,29 @@
+{
+  "created_at": "2025-10-26T19:02:33.114697Z",
+  "source_pipeline": "artifacts/melbourne_pipeline_final.pkl",
+  "n_features": 18,
+  "columns": [
+    "Suburb",
+    "Type",
+    "Method",
+    "SellerG",
+    "Distance",
+    "Bedroom",
+    "Bathroom",
+    "Car",
+    "CouncilArea",
+    "Latitude",
+    "Longtitude",
+    "Regionname",
+    "Propertycount",
+    "Log_Landsize",
+    "Log_BuildingArea",
+    "PropertyAge",
+    "Log_TotalArea",
+    "Is_CBD"
+  ],
+  "target": "log1p(Price)",
+  "framework": "scikit-learn",
+  "model_type": "GradientBoostingRegressor",
+  "random_state": 42
+}
