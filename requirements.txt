@@ -1,7 +1,15 @@
-fastapi
-uvicorn
-pydantic
-pandas
-numpy
-scikit-learn
-joblib
+
+# --- Core scientific and ML stack ---
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.2
+joblib==1.4.2
+# --- Visualization (optional, for analysis & EDA) ---
+matplotlib==3.9.2
+seaborn==0.13.2
+# --- API and model serving ---
+fastapi==0.115.2
+uvicorn==0.30.3
+pydantic==2.8.2
+
+ 
