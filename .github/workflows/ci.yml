@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e ".[api,dev]"
+
+      - name: Lint
+        run: |
+          ruff check .
+          ruff format --check .
+
+      - name: Test
+        run: pytest -q
+
+  docker:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t melbourne-price-api .
+
+      - name: Smoke test
+        run: |
+          docker run -d -p 8000:8000 --name api melbourne-price-api
+          for i in $(seq 1 30); do curl -sf localhost:8000/health && break; sleep 1; done
+          curl -sf -X POST localhost:8000/predict_one \
+            -H "Content-Type: application/json" \
+            -d '{"suburb":"Richmond","property_type":"h","region":"Southern Metropolitan",
+                 "council_area":"Yarra City Council","distance_km":2.6,"bedrooms":3,
+                 "bathrooms":2,"car_spaces":1,"land_size_m2":250,"building_area_m2":140,
+                 "year_built":1910,"latitude":-37.818,"longitude":145.001}'
