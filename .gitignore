@@ -1,151 +1,40 @@
-# -----------------------------
-
 # Python
-
-# -----------------------------
-
 __pycache__/
-
 *.py[cod]
-
-*.pyo
-
-*.pyd
-
 *.so
+*.egg-info/
+build/
+dist/
 
 # Virtual environments
-
 .env
-
-.venv
-
+.venv/
+venv/
 env/
 
-venv/
-
-ENV/
-
-pip-wheel-metadata/
-
-# Byte-compiled / optimized / DLL files
-
-*.dll
-
-*.dylib
-
-*.log
-
-# Unit test / coverage reports
-
+# Tests / tooling caches
+.pytest_cache/
+.ruff_cache/
 .coverage
-
-.cache/
-
-nosetests.xml
-
-coverage.xml
-
 htmlcov/
 
-.tox/
-
-.pytest_cache/
-
-# -----------------------------
-
-
-# -----------------------------
-
-# Jupyter Notebooks
-
-# -----------------------------
-
-.ipynb_checkpoints
-
+# Jupyter
+.ipynb_checkpoints/
 *.nbconvert.ipynb
 
-# -----------------------------
-
 # Logs and temporary files
-
-# -----------------------------
-
 *.log
-
 *.tmp
-
 *.bak
-
 *.swp
 
-*.swo
-
-*.DS_Store
-
-Thumbs.db
-
-# -----------------------------
-
-# Reports and outputs
-
-# -----------------------------
-
-*.pdf
-
-*.docx
-
+# Generated outputs (docs/images/ is committed for the README)
+outputs/
+results/
 *.zip
 
-*.tar
-
-*.gz
-
-report/output/
-
-outputs/
-
-results/
-
-plots/
-
-figures/
-
-# -----------------------------
-
-# IDE and editor settings
-
-# -----------------------------
-
+# IDE / OS
 .vscode/
-
 .idea/
-
-*.sublime-project
-
-*.sublime-workspace
-
-*.iml
-
-
-
-# -----------------------------
-
-# Mac and system files
-
-# -----------------------------
-
 .DS_Store
-
-.AppleDouble
-
-.LSOverride
-
-# -----------------------------
-
-# Notebooks checkpoints / caches
-
-# -----------------------------
-
-notebooks/.ipynb_checkpoints/
-
+Thumbs.db
