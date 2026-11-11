@@ -1,0 +1,7 @@
+# Dependencies for the Streamlit Community Cloud deployment (entrypoint: demo/app.py).
+# scikit-learn must match the version used to pickle models/model.joblib.
+streamlit>=1.40
+scikit-learn==1.9.1
+pandas>=2.2
+numpy>=2.0
+joblib>=1.4
